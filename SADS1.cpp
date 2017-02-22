@@ -34,17 +34,17 @@ static int test(int if_1, int if_2, int if_3){
     int err;
 
 	if((err = error_function(if_1)) != 0)
-        goto fail;
+        	goto fail;
 	if((err = error_function(if_2)) != 0)
-        goto fail;
-        goto fail;
+        	goto fail;
+        	goto fail;
 	if((err = error_function(if_3)) != 0)
-        goto fail;
+        	goto fail;
 
     cout << "All if cases failed..." << endl;
     return 1;
 
 fail:
 	cout << "goto fail reached..." << endl;
-	return err;
+	return 0;
 }
